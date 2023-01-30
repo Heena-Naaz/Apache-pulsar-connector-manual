@@ -61,6 +61,8 @@ image::images/pulsar.png[]
 
 * *Number of IO threads* - The number of IO threads in Pulsar Client used in WebSocket proxy. Default value - *1*
 
+image::images/producer-config.png[]
+
 ===   Authentication (Optional)
 
 
@@ -70,9 +72,6 @@ You must have TLS transport encryption configured on your cluster before you can
 
 You can use either https://pulsar.apache.org/docs/2.6.0/security-tls-authentication/[TLS Authentication] OR https://pulsar.apache.org/docs/2.6.0/security-jwt/[JSON Web Token Authentication]
  
-
-image::images/producer-config.png[]
-
 
 * *Token* - Tokens are used to identify a Pulsar client and associate with some "principal" (or "role") which will be then granted permissions to do some actions (e.g.: publish or consume from a topic). https://pulsar.apache.org/docs/next/security-token-admin/#token-authentication-overview[Token Authentication Overview]
 
@@ -104,7 +103,7 @@ image::images/producer-cert.png[]
 
 * *Client Timeout Time Unit*  -  Default value - *SECONDS*
 
-* *Operation Timeout* - Maximum amount of time that a client will wait for a request to complete before timing out and canceling the operation. - Default value - *30*
+* *Operation Timeout* - Maximum amount of time that a client will wait for a request to complete before timing out and canceling the operation. Default value - *30*
 
 * *Operation Timeout Time Unit* -  Default value - *SECONDS*
 
